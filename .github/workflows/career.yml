@@ -1,4 +1,4 @@
-name: Socials API Health Check
+name: career Health Check
 
 on:
   schedule:
