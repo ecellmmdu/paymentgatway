@@ -1,4 +1,4 @@
-name: job portalss
+name: compiler python 
 
 on:
   schedule:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Check Socials API Health
         run: |
-          response=$(curl -s -o /dev/null -w "%{http_code}" https://job-portle-aivo.onrender.com)
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://compiler-py.onrender.com/)
           if [ "$response" -eq 200 ]; then
             echo "Socials API is up and running!"
           else
